@@ -1,22 +1,16 @@
 import React from "react";
-import styles from './sidebar.module.css'
+import styles from './sidebar.module.css';
 
 const Sidebar: React.FC = () => {
-    return (
+  return (
     <div className={styles.container}>
-        <div className={styles.card}>
-        <div className={styles.button}>
-        <button>Inicio</button>
-        </div>
-        <div className={styles.button}>
-        <button>Guilda</button>
-        </div>
-        <div className={styles.button}>
-        <button>Taberna</button>
-        </div>
+      <div className={styles.card}>
+        <button className={styles.button}>Início</button>
+        <button className={styles.button}>Guilda</button>
+        <button className={styles.button}>Taberna</button>
+      </div>
     </div>
-    </div>
-    
-)};
+  );
+};
 
 export default Sidebar;
